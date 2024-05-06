@@ -1,0 +1,22 @@
+def cetak_nilai_kuadrat(n):
+    for i in range(n):
+        print(i ** 2)
+
+
+def cetak_nilai_kuadrat_ganjil(n):
+    for i in range(n):
+        if i % 2 != 0:
+            print(i ** 2)
+
+
+def main():
+    n = int(input("Masukkan nilai n: "))
+    print("Nilai kuadrat dari bilangan bulat non-negatif yang lebih kecil dari", n, "adalah:")
+    cetak_nilai_kuadrat(n)
+
+    print("\nNilai kuadrat dari bilangan ganjil yang lebih kecil dari", n, "adalah:")
+    cetak_nilai_kuadrat_ganjil(n)
+
+
+if __name__ == "__main__":
+    main()
